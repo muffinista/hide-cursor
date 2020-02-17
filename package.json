@@ -1,0 +1,24 @@
+{
+  "name": "hide-cursor",
+  "version": "0.0.1",
+  "author": "Colin Mitchell <colin@muffinlabs.com> (http://muffinlabs.com)",
+  "homepage": "https://github.com/muffinista/hide-cursor/",
+  "description": "Hide the mouse cursor",
+  "main": "index.js",
+  "license": "MIT",
+  "gypfile": true,
+  "scripts": {
+    "configure": "node-gyp configure",
+    "build": "node-gyp build",
+    "rebuild": "node-gyp configure && node-gyp build",
+    "test": "rimraf build && npm run rebuild && node ./test.js"
+  },
+  "devDependencies": {
+    "node-gyp": "^6.1.0",
+    "rimraf": "^3.0.0"
+  },
+  "dependencies": {
+    "nan": "^2.14.0",
+    "bindings": "^1.5.0"
+  }
+}
