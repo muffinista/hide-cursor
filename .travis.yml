@@ -9,6 +9,6 @@ os:
 cache:
   directories:
     - "node_modules"
-script: yarn rebuild
+script: npm run rebuild
 env:
   - YARN_GPG=no
