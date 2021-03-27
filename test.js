@@ -2,7 +2,7 @@
 // other than do a bad job of checking if calling hide/show
 // a lot will cause a segfault at some point
 
-let count = 25000;
+let count = 10;
 
 console.log(`Running ${count} iterations!`)
 for ( let i = 0; i < count; i++ ) {
