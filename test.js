@@ -6,6 +6,7 @@ let count = 10;
 
 console.log(`Running ${count} iterations!`)
 for ( let i = 0; i < count; i++ ) {
+  console.log(i);
   var cursor = require('./index.js');
   cursor.hide();
   cursor.show();
