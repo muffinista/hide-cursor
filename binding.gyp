@@ -11,7 +11,7 @@
         '-Wdisabled-optimization'
       ],
       'conditions': [
-        ['OS=="mac"', {
+        ['OS == "mac"', {
           'sources': [
             'src/mac/hidecursor.mm'
           ],
@@ -30,12 +30,12 @@
             ]
           }
         }],
-        ['OS=="win"', {
+        ['OS == "win"', {
           'sources': [
             'src/win/hidecursor.cc'
           ]
         }],
-        ['OS=="linux"', {
+        ['OS == "linux"', {
           'sources': [
             'src/unsupported/hidecursor.cc'
           ]
