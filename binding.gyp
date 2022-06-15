@@ -2,10 +2,7 @@
   "targets": [
     {
       "target_name": "HideCursor",
-      "sources": [ "HideCursor.cc" ],
-      "include_dirs": [
-        "<!(node -e \"require('nan')\")"
-      ],
+      "sources": [ "src/hidecursor.cc" ],
       'cflags': [
         '-Wall',
         '-Wparentheses',
@@ -15,7 +12,9 @@
       ],
       'conditions': [
         ['OS == "mac"', {
-          'defines': ['IS_MAC'],
+          'sources': [
+            'src/mac/hidecursor.mm'
+          ],
           'include_dirs': [
             'System/Library/Frameworks/Carbon.Framework/Headers'
           ],
@@ -31,9 +30,17 @@
             ]
           }
         }],
-        ["OS=='win'", {
-          'defines': ['IS_WINDOWS']
+        ['OS == "win"', {
+          'sources': [
+            'src/win/hidecursor.cc'
+          ]
+        }],
+        ['OS == "linux"', {
+          'sources': [
+            'src/unsupported/hidecursor.cc'
+          ]
         }]
+
       ]
     }
   ]
