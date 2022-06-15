@@ -1,2 +1,2 @@
-var HideCursor = require('bindings')('HideCursor');
-module.exports = HideCursor;
+const hidecursor = require('./build/Release/HideCursor');
+module.exports = hidecursor;

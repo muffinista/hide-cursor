@@ -1,0 +1,2 @@
+void doHide();
+void doShow();
