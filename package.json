@@ -1,6 +1,6 @@
 {
   "name": "hide-cursor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Colin Mitchell <colin@muffinlabs.com> (http://muffinlabs.com)",
   "homepage": "https://github.com/muffinista/hide-cursor/",
   "description": "Hide the mouse cursor",
@@ -11,6 +11,6 @@
     "test": "rimraf build && npm rebuild && node ./test.js"
   },
   "devDependencies": {
-    "rimraf": "^3.0.0"
+    "rimraf": "^5.0.5"
   }
 }
