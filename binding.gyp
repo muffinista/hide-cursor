@@ -9,10 +9,10 @@
         '-Winline',
         '-Wbad-function-cast',
         '-Wdisabled-optimization',
-        '-std=c++17'
+        '-std=c++20'
       ],
       'cflags_cc': [
-        '-std=c++17'
+        '-std=c++20'
       ],
       'conditions': [
         ['OS == "mac"', {
@@ -30,7 +30,8 @@
           },
           'xcode_settings': {
             'OTHER_CFLAGS': [
-                '-ObjC++'
+                '-ObjC++',
+                '-std=c++20'
             ]
           }
         }],
@@ -39,7 +40,7 @@
             'src/win/hidecursor.cc'
           ],
           'msvs_settings': {
-            'VCCLCompilerTool': { "ExceptionHandling": 1, 'AdditionalOptions': [ '-std:c++17' ] }
+            'VCCLCompilerTool': { "ExceptionHandling": 1, 'AdditionalOptions': [ '-std:c++20' ] }
           }
         }],
         ['OS == "linux"', {
