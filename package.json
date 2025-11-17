@@ -1,6 +1,6 @@
 {
   "name": "hide-cursor",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Colin Mitchell <colin@muffinlabs.com> (http://muffinlabs.com)",
   "homepage": "https://github.com/muffinista/hide-cursor/",
   "description": "Hide the mouse cursor",
