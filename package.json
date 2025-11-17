@@ -11,6 +11,6 @@
     "test": "rimraf build && npm rebuild && node ./test.js"
   },
   "devDependencies": {
-    "rimraf": "^5.0.5"
+    "rimraf": "^6.1.0"
   }
 }
